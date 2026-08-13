@@ -1,30 +1,38 @@
 #ifndef COMPUTER_H
 #define COMPUTER_H
 
-
 #include <iostream>
 using namespace std;
 
-// ==================== 3.1 Implement class Computer ====================
-
 // Computer class: models a basic computer with speed, main memory
 // and hard disk memory as its core attributes.
-class Computer 
-{ 
+class Computer {
 public:
-	// Default constructor: Initializes member variables to zero/default values
-	Computer(); 
+    // Default constructor: creates a Computer object with all
+    // attributes initialised to 0.
+    Computer();
 
-	Computer(int s, int mm, int hm); 
-	void display_specs(ostream& out)const; 
-	int get_speed()const; 
-	int get_mmemory()const; 
-	int get_hmemory()const;
+    // Overloaded constructor: creates a Computer object using the
+    // supplied speed, main memory and hard disk memory values.
+    Computer(int s, int mm, int hm);
 
-private: int speed; 
-	   int main_memory; 
-	   int harddisk_memory; 
+    // Displays the specifications (speed, main memory, hard disk
+    // memory) of the Computer object to the given output stream.
+    void display_specs(ostream& out) const;
+
+    // Accessor: returns the value of the private member 'speed'.
+    int get_speed() const;
+
+    // Accessor: returns the value of the private member 'main_memory'.
+    int get_mmemory() const;
+
+    // Accessor: returns the value of the private member 'harddisk_memory'.
+    int get_hmemory() const;
+
+private:
+    int speed;             // processor speed in MHz
+    int main_memory;       // main memory (RAM) in GB
+    int harddisk_memory;   // hard disk storage in GB
 };
-
 
 #endif
