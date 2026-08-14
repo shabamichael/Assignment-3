@@ -2,7 +2,6 @@
 #define COMPUTER_H
 
 #include <iostream>
-using namespace std;
 
 // Computer class: models a basic computer with speed, main memory
 // and hard disk memory as its core attributes.
@@ -18,7 +17,7 @@ public:
 
     // Displays the specifications (speed, main memory, hard disk
     // memory) of the Computer object to the given output stream.
-    void display_specs(ostream& out) const;
+    void display_specs(std::ostream& out) const;
 
     // Accessor: returns the value of the private member 'speed'.
     int get_speed() const;
