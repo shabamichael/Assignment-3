@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-namespace computersystem  
+namespace comp  
 {
 
     class Computer {
