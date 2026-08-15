@@ -23,6 +23,7 @@ namespace comp
         out << "Speed: " << speed << " MHz" << std::endl;
         out << "Main memory: " << main_memory << " GB" << std::endl;
         out << "Hard disk memory: " << harddisk_memory << " GB" << std::endl;
+
     }
     // display_specs implementation:-
     // writes each attribute of the Computer object, one per line,
