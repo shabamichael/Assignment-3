@@ -141,7 +141,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Computer.cpp" />
-    <ClCompile Include="driver_program.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Laptop.cpp" />
   </ItemGroup>
   <ItemGroup>
