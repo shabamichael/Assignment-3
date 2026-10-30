@@ -1,7 +1,9 @@
+//Inheritance example: Computer and Laptop classes
 //File 3: Laptop.h STARTS HERE
 #ifndef LAPTOP_H
 #define LAPTOP_H
 #include "Computer.h"
+
 namespace pc
 {
 	// Laptop class: derived from Computer.
@@ -11,14 +13,20 @@ namespace pc
 	public:
 		// Default constructor
 		Laptop();
+
 		// Overloaded constructor, using the supplied values
 		Laptop(int s, int mm, int hm, int bt, double w);
+
 		// Overridden display_specs():
 		//displays both the inherited
 		void display_specs(std::ostream& out) const;
+
+
 		// Accessor: returns the value of the private members
 		int get_battime() const;
 		double get_weight() const;
+
+
 	private:
 		int battery_time;
 		double weight;

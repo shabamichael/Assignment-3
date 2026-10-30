@@ -3,12 +3,17 @@
 #include "Computer.h"
 #include "Laptop.h"
 using std::cout;
+
+
 int main()
 {
 	// --- 3.2 Test Computer ---
 	// Create a Computer object:
 	//speed 1600 MHz, 4 GB RAM, 16 GB hard disk.
 	comp::Computer myComputer(1600, 4, 16);
+
+
+
 	// PURPOSE: Test accessor functions
 	// Section: display specifications using
 	// the individual accessor
@@ -18,6 +23,8 @@ int main()
 	cout << "Main memory: " << myComputer.get_mmemory() << " GB\n";
 	cout << "Hard disk memory: " << myComputer.get_hmemory() << " GB\n";
 	cout << "\n_____________________________________________\n";
+
+
 	// PURPOSE: Test member display function
 	// Section: display specifications using
 	//the display_specs()
@@ -25,6 +32,8 @@ int main()
 	myComputer.display_specs(cout);
 	cout << std::endl;
 	cout << std::endl;
+
+
 	// --- 3.4 Test Laptop ---
 	// Laptop object: speed 1333 MHz, 2 GB RAM,
 	// 8 GB hard disk, 8 hours battery time, 1.25 kg weight.
